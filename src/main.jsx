@@ -12,7 +12,7 @@ import Contact from './components/Contact.jsx'
 import User from './components/User/User.jsx'
 import Github, { githubinfoloader } from './components/Github/Github.jsx'
 const router=createBrowserRouter([{
-  path:"/simple-clone",
+  path:"/simple-clone/",
   element:<Layout/>,
   children:[{
     path:'',

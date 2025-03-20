@@ -20,7 +20,7 @@ function Github(){
     
     return(
         <>
-        <div className="text-center m-4 bg-pink-600  rounded-lg text-white p-4 text-3xl flex  justify-between  ">Github Followers of {data.name} :: {data.followers}
+        <div className="text-center m-4 bg-pink-600  rounded-lg text-white p-4 text-3xl flex  justify-between  ">Github Followers of {data.name} : {data.followers}
             <img src={data.avatar_url} alt="picture" width={300} className="content-end ;
 "></img>
 
@@ -32,6 +32,6 @@ function Github(){
 export default Github;
 export const githubinfoloader =async ()=>{
     
-  const response= await  fetch(`https://api.github.com/users/manish7392`)
+  const response= await  fetch(`https://api.github.com/users/Adarshmishra563`)
   return  response.json();
 }

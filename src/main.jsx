@@ -12,21 +12,21 @@ import Contact from './components/Contact.jsx'
 import User from './components/User/User.jsx'
 import Github, { githubinfoloader } from './components/Github/Github.jsx'
 const router=createBrowserRouter([{
-  path:"/",
+  path:"/simple-clone",
   element:<Layout/>,
   children:[{
     path:'',
     element:<Home/>
-  },{path:"about",
+  },{path:"/simple-clone/about",
     element:<About/>
   
-  },{path:"contact",
+  },{path:"/simple-clone/contact",
     element:<Contact/>
   },
-  ,{path:"user/:userid",
+  ,{path:"/simple-clone/user/:userid",
     element:<User/>
   },{ loader : githubinfoloader,
-    path:"github",
+    path:"/simple-clone/github",
     element:<Github/>
   }
 
@@ -39,6 +39,7 @@ const router=createBrowserRouter([{
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <StrictMode>
+    
     <RouterProvider router={router}/>
   </StrictMode>,
 )
